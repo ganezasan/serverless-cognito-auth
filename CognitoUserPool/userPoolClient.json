@@ -1,0 +1,6 @@
+{
+  "UserPoolId": "<UserPoolId>",
+  "ClientName": "<ClientName>",
+  "GenerateSecret": false,
+  "RefreshTokenValidity": 30
+}

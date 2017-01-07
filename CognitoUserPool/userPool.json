@@ -1,0 +1,36 @@
+{
+  "PoolName": "<PoolName>",
+  "Policies": {
+    "PasswordPolicy": {
+      "MinimumLength": 8,
+      "RequireUppercase": true,
+      "RequireLowercase": true,
+      "RequireNumbers": true,
+      "RequireSymbols": true
+    }
+  },
+  "AdminCreateUserConfig": {
+    "AllowAdminCreateUserOnly": true
+  },
+  "DeviceConfiguration": {
+    "ChallengeRequiredOnNewDevice": true
+  },
+  "AliasAttributes": [
+    "email"
+  ],
+  "Schema": [
+    {
+      "Name": "email",
+      "Required": true
+    },
+    {
+      "Name": "project",
+      "AttributeDataType": "String",
+      "Mutable": true,
+      "StringAttributeConstraints": {
+        "MinLength": "1",
+        "MaxLength": "256"
+      }
+    }
+  ]
+}

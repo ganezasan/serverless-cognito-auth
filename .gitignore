@@ -1,2 +1,4 @@
 .npmignore
 .serverless
+config.json
+CognitoUserPool/edit
