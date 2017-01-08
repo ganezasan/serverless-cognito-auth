@@ -2,5 +2,8 @@
   "UserPoolId": "<UserPoolId>",
   "ClientName": "<ClientName>",
   "GenerateSecret": false,
-  "RefreshTokenValidity": 30
+  "RefreshTokenValidity": 30,
+  "ExplicitAuthFlows": [
+    "ADMIN_NO_SRP_AUTH"
+  ]
 }
