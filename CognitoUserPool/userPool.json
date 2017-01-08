@@ -13,7 +13,8 @@
     "AllowAdminCreateUserOnly": true
   },
   "DeviceConfiguration": {
-    "ChallengeRequiredOnNewDevice": true
+    "ChallengeRequiredOnNewDevice": true,
+    "DeviceOnlyRememberedOnUserPrompt": true
   },
   "AliasAttributes": [
     "email"
