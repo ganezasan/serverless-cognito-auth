@@ -5,7 +5,6 @@ Sample code for using Cognito User Pools with CUSOTOM AUTH of API Gateway.
 # Cognito User Pools
 
 ## create Cognito Pools
-
 ```
 $ POOL_NAME=sample STAGE=dev sh CognitoUserPool/bin/create_user_pool.sh
 ```
@@ -46,7 +45,7 @@ serverless deploy
 ```
 
 ## test
-Please change <apiId> and <IdToken>.
+Please change `<apiId>` and `<IdToken>`.
 
 ```
 curl -X POST https://<apiId>.execute-api.ap-northeast-1.amazonaws.com/dev/auth/hello -H "Authorization: <IdToken>
