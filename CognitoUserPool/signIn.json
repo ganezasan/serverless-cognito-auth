@@ -1,0 +1,9 @@
+{
+  "AuthFlow": "ADMIN_NO_SRP_AUTH",
+  "AuthParameters": {
+    "USERNAME": "<USERNAME>",
+    "PASSWORD": "<PASSWORD>"
+  },
+  "ClientId": "<ClientId>",
+  "UserPoolId": "<UserPoolId>"
+}

@@ -1,0 +1,16 @@
+{
+  "UserPoolId": "<UserPoolId>",
+  "Username": "<email>",
+  "UserAttributes": [
+    {
+        "Name": "email",
+        "Value": "<email>"
+    },
+    {
+        "Name": "custom:project",
+        "Value": "<project>"
+    }
+  ],
+  "TemporaryPassword": "<Password>",
+  "ForceAliasCreation": true
+}
