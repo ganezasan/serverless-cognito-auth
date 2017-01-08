@@ -30,7 +30,7 @@ fi
 
 # check USER_POOL_ID
 USER_POOL_ID=$(cat config.json | jq -r '.USER_POOL_ID')
-if [ -n "$USER_POOL_ID" ]; then
+if [ -z "$USER_POOL_ID" ] || [ "$USER_POOL_ID" = "null" ]; then
   echo "Please set USER_POOL_ID in config.json"
   exit 1
 fi
