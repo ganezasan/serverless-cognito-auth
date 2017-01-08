@@ -21,7 +21,7 @@ if [ ! -d "CognitoUserPool" ]; then
 fi
 
 # Check env
-if [ -z "$STAGE" || -z "$POOL_NAME"]; then
+if [ -z "$STAGE" ] || [ -z "$POOL_NAME" ]; then
   echo "Please set STAGE env, $ POOL_NAME=sample STAGE=dev sh CognitoUserPool/bin/create_user_pool.sh"
   exit 1
 fi
