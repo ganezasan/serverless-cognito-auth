@@ -21,8 +21,8 @@ if [ ! -d "CognitoUserPool" ]; then
 fi
 
 # Check env
-if [ -z "$STAGE" ]; then
-  echo "Please set STAGE env, $ STAGE=dev sh CognitoUserPool/bin/create_user_pool.sh"
+if [ -z "$STAGE" || -z "$POOL_NAME"]; then
+  echo "Please set STAGE env, $ POOL_NAME=sample STAGE=dev sh CognitoUserPool/bin/create_user_pool.sh"
   exit 1
 fi
 
@@ -38,8 +38,8 @@ fi
 userPoolFileName='userPool.json'
 userPoolClientFileName='userPoolClient.json'
 
-USER_POOL_NAME="startupdb-${STAGE}"
-USER_POOL_CLIENT_NAME="startupdb-${STAGE}"
+USER_POOL_NAME="${POOL_NAME}-${STAGE}"
+USER_POOL_CLIENT_NAME="${POOL_NAME}-${STAGE}"
 
 # Create Cognito User Pool
 # find User pool id
