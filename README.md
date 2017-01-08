@@ -11,14 +11,14 @@ use this resources.
 
 ### create Cognito Pools
 ```
-$ POOL_NAME=sample STAGE=dev sh CognitoUserPool/bin/create_user_pool.sh
+$ POOL_NAME=sample STAGE=dev sh CognitoUserPool/bin/create_cognito_user_pool.sh
 ```
 
 ### delete Cognito Pools
 
-This script using config.json, it was created from create_user_pool.sh
+This script using config.json, it was created from create_cognito_user_pool.sh
 ```
-$ sh CognitoUserPool/bin/create_user_pool.sh
+$ sh CognitoUserPool/bin/delete_cognito_user_pool.sh
 ```
 
 ### create User
