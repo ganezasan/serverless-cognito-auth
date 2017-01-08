@@ -1,6 +1,9 @@
 service: cognito-auth
 
 frameworkVersion: ">=1.5.0"
+package:
+  exclude:
+    - CognitoUserPool
 
 provider:
   name: aws
