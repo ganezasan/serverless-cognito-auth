@@ -30,7 +30,7 @@ fi
 
 # check USER_POOL_ID
 USER_POOL_ID=$(cat config.json | jq -r '.USER_POOL_ID')
-if [ -z "$USER_POOL_ID" ]; then
+if [ -n "$USER_POOL_ID" ]; then
   echo "Please set USER_POOL_ID in config.json"
   exit 1
 fi
@@ -44,3 +44,5 @@ echo "Removing Cognito Identity Pool $USER_POOL_ID end"
 # delte USER_POOL_ID in config
 rm config.json
 echo '{}' | jq '.' >> config.json
+
+cd ..
